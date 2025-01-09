@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --Light-green: hsl(150, 100%, 66%);
+    --Light-cyan: hsl(193, 38%, 86%);
+    --Gryash-blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    background-color: var(--Dark-blue);
+    margin: 0;
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-advice {
+    width: 540px;
+    height: 332px;
+    background-color: var(--Dark-Grayish-Blue);
+    border-radius: 15px;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.advice-number {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Outfit", serif;
+    font-weight: 100;
+    margin-bottom: 30px;
+    color: var(--Light-green);
+
+}
+
+.advice {
+    text-align: center;
+    font-size: 28px;
+    font-family: "Outfit", serif;
+    font-weight: 100;
+    color: white;
+    margin: 10px;
+}
+.advice-button {
+    position: absolute; 
+    top:90%; 
+    left: 45%; 
+    background-color: var(--Light-green);
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease, transform 0.3s ease;
+}
+.advice-button:hover {
+    box-shadow: 0 0 15px 5px var(--Light-green);
+    transform: scale(1.1);
+}
+.attribution
+{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.attribution a
+{
+    color: red;
+    text-decoration: none;
+}
+
+
+/* mobile view  */
+@media (max-width: 480px) {
+.card-advice
+{
+    width: 343px;
+    height: 315px;
+}
+}
+
+
